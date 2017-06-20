@@ -54,4 +54,4 @@ or
 ```
 
 ## Example output ##
-![BASH out](http://url/to/img.png)
+![BASH out](https://github.com/mainster/whz_vpn_installer/blob/master/bash.png)
