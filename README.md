@@ -71,7 +71,6 @@ Please enter your username and password.
 POST https://vpn1.fh-zwickau.de/
 Attempting to connect to server 141.32.75.150:443
 SSL negotiation with 141.32.75.150
-Server certificate verify failed: signer not found
 Connected to HTTPS on 141.32.75.150
 Got CONNECT response: HTTP/1.1 200 OK
 CSTP connected. DPD 30, Keepalive 20
