@@ -55,3 +55,37 @@ or
 
 ## Example output ##
 ![BASH out](https://github.com/mainster/whz_vpn_installer/blob/master/bash.png)
+
+## Example usage ##
+```bash
+0:mainster@x58a:~$ vpnWhzConnect 
+POST https://vpn1.fh-zwickau.de/
+Attempting to connect to server 141.32.75.150:443
+SSL negotiation with vpn1.fh-zwickau.de
+Connected to HTTPS on vpn1.fh-zwickau.de
+XML POST enabled
+Please enter your username and password.
+POST https://vpn1.fh-zwickau.de/
+XML POST enabled
+Please enter your username and password.
+POST https://vpn1.fh-zwickau.de/
+Attempting to connect to server 141.32.75.150:443
+SSL negotiation with 141.32.75.150
+Server certificate verify failed: signer not found
+Connected to HTTPS on 141.32.75.150
+Got CONNECT response: HTTP/1.1 200 OK
+CSTP connected. DPD 30, Keepalive 20
+RTNETLINK answers: File exists
+Connected vpnZw as 141.32.62.159, using SSL
+Continuing in background; pid 22889
+Established DTLS connection (using GnuTLS). Ciphersuite (DTLS0.9)-(RSA)-(3DES-CBC)-(SHA1).
+Successfully mounted samba share on /mnt/whzInfo!
+Successfully mounted samba share on /mnt/whzELT!
+Successfully mounted samba share on /mnt/whzHome!
+Successfully mounted samba share on /mnt/whzWeb!
+0:mainster@x58a:~$ mount -tcifs
+//whz-ffak-00.zw.fh-zwickau.de/Information on /mnt/whzInfo type cifs (rw,nosuid,nodev,noexec,relatime,vers=1.0,cache=strict,username=mad16h09,domain=ZW,uid=1000,forceuid,gid=1000,forcegid,addr=141.32.44.76,file_mode=0755,dir_mode=0755,nounix,mapposix,nobrl,rsize=61440,wsize=65536,actimeo=1)
+//whz-ffak-00.zw.fh-zwickau.de/Information/Lehre/ETechnik on /mnt/whzELT type cifs (rw,nosuid,nodev,noexec,relatime,vers=1.0,cache=strict,username=mad16h09,domain=ZW,uid=1000,forceuid,gid=1000,forcegid,addr=141.32.44.76,file_mode=0755,dir_mode=0755,nounix,mapposix,nobrl,rsize=61440,wsize=65536,actimeo=1)
+//whz-file-10.zw.fh-zwickau.de/mad16h09 on /mnt/whzHome type cifs (rw,nosuid,nodev,noexec,relatime,vers=1.0,cache=strict,username=mad16h09,domain=ZW,uid=1000,forceuid,gid=1000,forcegid,addr=141.32.45.86,file_mode=0755,dir_mode=0755,nounix,mapposix,nobrl,rsize=61440,wsize=65536,actimeo=1)
+//whz-cms-10.zw.fh-zwickau.de/Web_Space/mad16h09 on /mnt/whzWeb type cifs (rw,nosuid,nodev,noexec,relatime,vers=1.0,cache=strict,username=mad16h09,domain=ZW,uid=1000,forceuid,gid=1000,forcegid,addr=141.32.44.56,file_mode=0755,dir_mode=0755,nounix,mapposix,nobrl,rsize=61440,wsize=65536,actimeo=1)
+```
