@@ -1,5 +1,5 @@
 # whz_vpn_installer #
-This repository contains a BASH-driven installer script for the automatic installation and configuration of various network drives for students of the [WHZ](https://www.fh-zwickau.de/).
+This repository contains a BASH-driven installer script for automatic installation and configuration of various network drives, usable by students of the [WHZ](https://www.fh-zwickau.de/).
 
 ## OpenConnect ##
 The VPN-SSL connection is established via an open-source implementation of "Cisco's AnyConnect SSL VPN" protocol (ZKI user account necessary). Based on this, various CIFS shares could be mounted to your file system and managed from within your Unix Box.
@@ -22,7 +22,7 @@ The ZKI credentials (ZKI_USER:ZKI_PASSWD) must be passed via environment variabl
 The trailing space before ``` sudo ``` prevents BASH from appending the script-invocation call in cleartext to your ~/.bash_history.
 
 ## use-web-space ##
-If you are a [web-space registered ZKI user](https://www.fh-zwickau.de/zki/nutzerservice/webspace-freischalten/), simply append the ```--use-web-space``` flag after the ```--install``` flag when invoking the whz_vpn_installer.sh for the next install/update. 
+If you are a [web-space registered ZKI user](https://www.fh-zwickau.de/zki/nutzerservice/webspace-freischalten/), simply append the ```--use-web-space``` flag after the ```--install``` flag when invoking the zki_vpn_installer.sh for the next install/update. 
 ```
  sudo ZKI_USER="mad16h09" ZKI_PASSWD="qwertz123" UNID="mainster" ./zki_vpn_installer.sh --install --use-web-space
 ```
